@@ -10,7 +10,7 @@ RUN echo 'http://nl.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositorie
               /usr/bin/kube-controller-manager \
               /usr/bin/kube-apiserver \
               /usr/bin/hyperkube \
-    && wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz -O helm.tar.gz \
+    && wget https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz -O helm.tar.gz \
     && tar -zxvf helm.tar.gz \
-    && cp linux-amd64/helm /usr/local/bin/helm \
+    && cp linux-amd64/helm /bin/helm \
     && rm -rf linux-amd64 helm.tar.gz
