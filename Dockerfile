@@ -1,7 +1,7 @@
 FROM alpine:3.9
 
 RUN echo 'http://nl.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories \
-    && apk add --update kubernetes python3 \
+    && apk add --update kubernetes \
     && mkdir -p /root/.kube \
     && rm -rf /usr/bin/kubelet \
               /usr/bin/kubeadm \
